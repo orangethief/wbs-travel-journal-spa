@@ -46,4 +46,5 @@ Starter code for authentication/authorization module at WBS Coding School
   - `pages`: React components that are directly mapped to a route.
   - `components`: React components used in pages
   - `layouts`: React components that are used as layouts in routes and render `Outlet`
+  - `data`: Functions that request data to external APIs
   - `TailwindCSS` and `DaisyUI` are configured for styles <3
