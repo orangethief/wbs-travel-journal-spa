@@ -1,7 +1,7 @@
-import { PostCard, PostsSkeleton } from '@/components';
-import { getPosts } from '@/data';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import { getPosts } from '@/data';
+import { PostCard, PostsSkeleton } from '@/components';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
