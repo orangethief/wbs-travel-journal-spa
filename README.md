@@ -8,7 +8,7 @@ Starter code for authentication/authorization module at WBS Coding School
 - Clone into your computer
 - `cd` into working directory
 - `npm i` to install dependencies
-- create a `.env.development.local` file with two variables:
+- create a `.env.development.local`:
   - `VITE_APP_TRAVEL_JOURNAL_API_URL` set to `http://localhost:8000` assuming your backend API is running on port 8000
 - The server defaults to port `5173`, although you can override this in the script sections in `package.json`
 
