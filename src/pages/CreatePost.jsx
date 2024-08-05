@@ -40,7 +40,7 @@ const CreatePost = () => {
             value={title}
             onChange={handleChange}
             placeholder='A title for your post...'
-            className='input input-bordered w-full max-w-xs'
+            className='input input-bordered w-full'
           />
         </label>
         <label className='form-control grow'>
@@ -50,7 +50,7 @@ const CreatePost = () => {
             value={author}
             onChange={handleChange}
             placeholder='Your name...'
-            className='input input-bordered w-full max-w-xs'
+            className='input input-bordered w-full'
           />
         </label>
       </div>
