@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { signin } from '@/data';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [{ email, password }, setForm] = useState({
@@ -10,13 +12,15 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = e => setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
-
+  const navigate = useNavigate();
   const handleSubmit = async e => {
     try {
       e.preventDefault();
       if (!email || !password) throw new Error('All fields are required');
       setLoading(true);
       console.log(email, password);
+      await signin({ email, password });
+      navigate('/');
     } catch (error) {
       toast.error(error.message);
     } finally {

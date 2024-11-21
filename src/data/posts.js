@@ -3,7 +3,7 @@ if (!API_URL) throw new Error('API URL is required, are you missing a .env file?
 const baseURL = `${API_URL}/posts`;
 
 export const getPosts = async () => {
-  const res = await fetch(baseURL/* , { credentials: 'include' } */);
+  const res = await fetch(baseURL, { credentials: 'include' });
   if (!res.ok) {
     const errorData = await res.json();
     if (!errorData.error) {
